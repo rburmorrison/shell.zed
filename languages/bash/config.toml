@@ -1,0 +1,33 @@
+name = "Bash"
+grammar = "bash"
+
+# File list largely taken from: https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
+path_suffixes = [
+  "bash",
+  "bash_profile",
+  "bash_login",
+  "profile",
+  "bash_logout",
+  "bashrc",
+]
+
+first_line_pattern = "#!.*( |/)bash"
+line_comments = ["#"]
+
+autoclose_before = ")]}"
+brackets = [
+  { start = "{", end = "}", close = true, newline = true },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "(", end = ")", close = true, newline = true },
+  { start = '"', end = '"', close = true, newline = false, not_in = [
+    "string",
+  ] },
+  { start = "'", end = "'", close = true, newline = false, not_in = [
+    "string",
+  ] },
+]
+
+increase_indent_pattern = "(then|do|else)\\s*$"
+decrease_indent_pattern = "^\\s*(else|elif |fi|done)"
+
+tab_size = 2
