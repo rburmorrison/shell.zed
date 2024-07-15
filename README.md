@@ -8,7 +8,7 @@ Support for Bash, POSIX Shell, and ZSH.
 ## Features
 
 - Offline LSP Support
-  - Auto-Detects installed language server
+  - Auto-detects installed language server
   - Falls back to installed language server if offline
 - Syntax Highlighting
   - Adapted from [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/blob/master/queries/bash/highlights.scm)
@@ -16,6 +16,18 @@ Support for Bash, POSIX Shell, and ZSH.
 - Comprehensive Bracket Jumping
 - Smart Indentation
 - Linting[^1] and Formatting (when dependencies are installed)
+
+## Smart LSP Detection
+
+When `bash-language-server` is installed and in your `$PATH`, it will be used as
+the language server automatically without checking the internet!
+
+If you're offline and this plugin has already installed a version of the
+language server, it will use that version instead after it fails updating one
+time.
+
+Otherwise, it will check the internet for the latest version of the langauge
+server and install it for you.
 
 ## Linting and Formatting
 
