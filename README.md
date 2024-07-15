@@ -26,13 +26,13 @@ In short, you will need to install the following:
 - `shellcheck` - Linting
 - `shfmt` - Formatting
 
-### Linux
+### Linux Installation
 
 ```bash
 sudo apt-get install shellcheck shfmt
 ```
 
-### Homebrew
+### Homebrew Installation
 
 ```bash
 brew install shellcheck shfmt
