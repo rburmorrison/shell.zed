@@ -1,5 +1,9 @@
 # shell.zed
 
+<p align="center">
+  <img src="doc/demo.gif" alt="Demo GIF">
+</p>
+
 Support for Bash, POSIX Shell, and ZSH.
 
 - Tree Sitter: [tree-sitter-bash](https://github.com/tree-sitter/tree-sitter-bash)
