@@ -1,8 +1,0 @@
-name = "POSIX Shell Script"
-grammar = "bash"
-
-# File list largely taken from: https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
-path_suffixes = ["sh"]
-
-first_line_pattern = "#!.* sh"
-line_comments = ["#"]

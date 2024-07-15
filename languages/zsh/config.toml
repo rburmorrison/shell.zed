@@ -1,8 +1,0 @@
-name = "Zsh"
-grammar = "bash"
-
-# File list largely taken from: https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
-path_suffixes = ["zsh", "zshenv", "zprofile", "zshrc", "zlogin", "zlogout"]
-
-first_line_pattern = "#!.* zsh"
-line_comments = ["#"]

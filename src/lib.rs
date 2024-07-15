@@ -84,11 +84,13 @@ impl zed::Extension for ShellExtension {
 
         let script_path = std::env::current_dir()
             .expect("Failed to get the current directory")
-            .join(SERVER_PATH);
+            .join(SERVER_PATH)
+            .display()
+            .to_string();
 
         Ok(zed::Command {
             command: zed::node_binary_path()?,
-            args: vec![script_path.display().to_string(), "start".to_string()],
+            args: vec![script_path, "start".to_string()],
             env: Default::default(),
         })
     }

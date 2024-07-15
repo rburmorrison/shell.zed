@@ -1,17 +1,26 @@
-name = "Bash"
+name = "Shell"
 grammar = "bash"
 
-# File list largely taken from: https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
+# Entries are based on the following resources:
+# - https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
+# - https://zsh.sourceforge.io/Intro/intro_3.html
 path_suffixes = [
+  "sh",
   "bash",
   "bash_profile",
   "bash_login",
   "profile",
   "bash_logout",
   "bashrc",
+  "zsh",
+  "zshenv",
+  "zprofile",
+  "zshrc",
+  "zlogin",
+  "zlogout",
 ]
 
-first_line_pattern = "#!.*( |/)bash"
+first_line_pattern = "#!.*( |/)(da|ba|z)?sh"
 line_comments = ["#"]
 
 autoclose_before = ")]}"

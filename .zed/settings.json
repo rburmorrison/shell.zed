@@ -6,6 +6,9 @@
   "languages": {
     "Scheme": {
       "tab_size": 2
+    },
+    "TOML": {
+      "tab_size": 2
     }
   }
 }

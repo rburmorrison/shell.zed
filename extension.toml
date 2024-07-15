@@ -3,7 +3,7 @@ name = "Shell"
 version = "0.1.0"
 schema_version = 1
 authors = ["Ryan Burmeister-Morrison <rburmeistermorrison@gmail.com>"]
-description = "LSP support for Bash and POSIX shell scripts, highlighting for ZSH."
+description = "Support for Bash, POSIX Shell, and ZSH."
 repository = "https://github.com/rburmorrison/shell.zed"
 
 [grammars.bash]
@@ -12,4 +12,4 @@ commit = "d1a1a3fe7189fdab5bd29a54d1df4a5873db5cb1"            # v0.20.5
 
 [language_servers.bash]
 name = "bash-language-server"
-languages = ["Bash", "POSIX Shell Script"]
+languages = ["Shell"]
