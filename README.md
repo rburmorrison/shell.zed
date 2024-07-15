@@ -12,9 +12,7 @@ Support for Bash, POSIX Shell, and ZSH.
   - Highlights Command Flags
 - Comprehensive Bracket Jumping
 - Smart Indentation
-- Linting* and Formatting (when dependencies are installed)
-
-- *: Linting is only available for Bash and POSIX Shell.
+- Linting[^1] and Formatting (when dependencies are installed)
 
 ## Linting and Formatting
 
@@ -39,3 +37,5 @@ sudo apt-get install shellcheck shfmt
 ```bash
 brew install shellcheck shfmt
 ```
+
+[^1]: Linting is only available for Bash and POSIX Shell.
