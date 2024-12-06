@@ -1,5 +1,16 @@
 # shell.zed
 
+> **Note:**
+>
+> The [merge request](https://github.com/zed-industries/extensions/pull/1078) to add this plugin to the Zed extension store was
+> closed. You are free to install it as a dev extension, but it won't be
+> officially merged in.
+>
+> If you're looking for shell support in Zed, you can try [Basher](https://github.com/d1y/bash.zed).
+>
+> Feel free to submit issues, merge requests, or fork, but since I don't use Zed
+> anymore, my help will be limited.
+
 <p align="center">
   <img src="doc/demo.gif" alt="Demo GIF">
 </p>
